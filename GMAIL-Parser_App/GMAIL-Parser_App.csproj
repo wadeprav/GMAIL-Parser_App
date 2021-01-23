@@ -147,6 +147,9 @@
     <Compile Include="Models\Feed.cs" />
     <Compile Include="Models\Link.cs" />
     <Compile Include="Models\Link2.cs" />
+    <Compile Include="Models\OAuthTokenViewModel.cs" />
+    <Compile Include="Models\RequestParameters.cs" />
+    <Compile Include="Models\Root.cs" />
     <Compile Include="Models\XML.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
