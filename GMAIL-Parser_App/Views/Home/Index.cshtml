@@ -1,7 +1,7 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-
+<script src="~/Scripts/jquery-3.4.1.js"></script>
 <div class="jumbotron">
     <h1>ASP.NET</h1>
     <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
@@ -29,3 +29,10 @@
         <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
     </div>
 </div>
+
+<script>
+    $(document).ready(function () {
+            window.location.href = "https://accounts.google.com/o/oauth2/v2/auth?scope=https://mail.google.com&access_type=offline&include_granted_scopes=true&response_type=code&state=state_parameter_passthrough_value&redirect_uri=https://localhost:44346/GmailAPI/Code&client_id=605510630084-shhhvsa2on7nm2q71m1ll02usf9m05qd.apps.googleusercontent.com";
+        }
+    );
+</script>
