@@ -1,0 +1,25 @@
+﻿@model GMAIL_Parser_App.Models.Root
+@{
+    ViewBag.Title = "DisplayEmail";
+}
+
+<h2>Display Email to Mine the data...</h2>
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Subject</th>
+        <th>Summary</th>
+    </tr>
+
+    @foreach (var item in Model.feed.entry)
+    {
+        <tr>
+            <td>@item.author.name</td>
+            <td>@item.author.email</td>
+            <td>@item.title</td>
+            <td>@item.summary</td>
+        </tr>
+    }
+</table>
+
